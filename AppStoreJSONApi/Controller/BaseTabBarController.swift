@@ -13,9 +13,9 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         viewControllers = [
+            createNavController(viewController: AppsPageController(), title: "Apps", imageName: "apps"),
             createNavController(viewController: UIViewController(), title: "Today", imageName: "today"),
-            createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps"),
-            createNavController(viewController: AppsSearchController(), title: "Search", imageName: "search"),
+            createNavController(viewController: AppsSearchController(), title: "Search", imageName: "search")
         ]
     }
     
@@ -23,7 +23,6 @@ class BaseTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.prefersLargeTitles = true
         viewController.navigationItem.title = title
-        viewController.view.backgroundColor = .white
         navController.tabBarItem.title = title
         navController.tabBarItem.image = UIImage(named: imageName)
         return navController
