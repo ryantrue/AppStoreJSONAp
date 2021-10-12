@@ -18,6 +18,7 @@ class AppsHeaderHorizontalController: BaseListController, UICollectionViewDelega
         
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
+            layout.collectionView?.showsHorizontalScrollIndicator = false
         }
     }
     

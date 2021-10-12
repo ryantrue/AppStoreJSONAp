@@ -17,6 +17,7 @@ class AppsHorizontalController: BaseListController, UICollectionViewDelegateFlow
         collectionView.register(AppRowCell.self, forCellWithReuseIdentifier: cellId)
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
+            layout.collectionView?.showsHorizontalScrollIndicator = false
         }
     }
     

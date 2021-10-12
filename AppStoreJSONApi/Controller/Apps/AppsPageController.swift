@@ -11,13 +11,26 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
     
     let cellId = "id"
     let headerId = "headerId"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.register(AppsGroupCell.self, forCellWithReuseIdentifier: cellId)
         
         collectionView.register(AppsPageHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        
+        fetchData()
+    }
+    
+    fileprivate func fetchData() {
+        print("Fetching new JSON DATA somehow...")
+        Service.shared.fetchCames { (appGroup, err) in
+            if let err = err {
+                print("Failed to fetch gemes:", err)
+                return
+            }
+            print(appGroup?.feed.result)
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -43,7 +56,7 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return .init(top: 16, left: 0, bottom: 0, right: 0)
-            
+        
     }
     
 }
