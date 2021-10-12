@@ -24,12 +24,12 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
     
     fileprivate func fetchData() {
         print("Fetching new JSON DATA somehow...")
-        Service.shared.fetchCames { (appGroup, err) in
+        Service.shared.fetchGames { (appGroup, err) in
             if let err = err {
-                print("Failed to fetch gemes:", err)
+                print("Failed to fetch games:", err)
                 return
             }
-            print(appGroup?.feed.result)
+            print(appGroup?.feed.results)
         }
     }
     

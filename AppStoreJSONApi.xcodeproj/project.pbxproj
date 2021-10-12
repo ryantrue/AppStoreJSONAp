@@ -92,7 +92,6 @@
 		A336DF81270D612A008124F3 /* AppStoreJSONApi */ = {
 			isa = PBXGroup;
 			children = (
-				A3417C5827107F810097989F /* AppStoreJSONApi.entitlements */,
 				A399798E270ED9830054437B /* Service */,
 				A399798B270ED4620054437B /* Model */,
 				A3997986270D9CF60054437B /* Helpers */,
@@ -102,6 +101,7 @@
 				A336DF84270D612A008124F3 /* SceneDelegate.swift */,
 				A336DF8B270D612B008124F3 /* Assets.xcassets */,
 				A336DF8D270D612B008124F3 /* LaunchScreen.storyboard */,
+				A3417C5827107F810097989F /* AppStoreJSONApi.entitlements */,
 				A336DF90270D612B008124F3 /* Info.plist */,
 			);
 			path = AppStoreJSONApi;
