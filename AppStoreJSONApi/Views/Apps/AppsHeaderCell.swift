@@ -20,8 +20,6 @@ class AppsHeaderCell: UICollectionViewCell {
         companyLabel.textColor = .blue
         tittleLabel.numberOfLines = 2
         
-        imageView.backgroundColor = .red
-        
         let stackView = VerticalStackView(arrangedSubviews: [companyLabel, tittleLabel, imageView], spacing: 12)
         addSubview(stackView)
         stackView.fillSuperview(padding: .init(top: 16, left: 0, bottom: 0, right: 0))
