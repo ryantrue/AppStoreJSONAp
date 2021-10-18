@@ -21,8 +21,9 @@ class BetterSnappingLayout : UICollectionViewFlowLayout {
 
         layoutAttributesArray?.forEach({ (layoutAttributes) in
             let itemOffset = layoutAttributes.frame.origin.x
-            if fabsf(Float(itemOffset - horizontalOffset)) < fabsf(Float(offsetAdjustment)) {
-                offsetAdjustment = itemOffset - horizontalOffset
+            let itemWidth = Float(layoutAttributes.frame.width)
+            let direction: Float = velocity.x > 0 ? 1 : -1
+            if fabsf(Float(itemOffset - horizontalOffset)) < fabsf(Float(offsetAdjustment)) + itemWidth * direction  {                 offsetAdjustment = itemOffset - horizontalOffset
             }
         })
 

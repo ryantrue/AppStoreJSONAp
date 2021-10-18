@@ -35,6 +35,12 @@
 		A3997993270EEF760054437B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A3997992270EEF760054437B /* SDWebImage */; };
 		A3AD6E2C2715F06C00D39750 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD6E2B2715F06C00D39750 /* AppGroup.swift */; };
 		A3AD6E2E27170CBA00D39750 /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD6E2D27170CBA00D39750 /* SocialApp.swift */; };
+		A3BDE7E4271CB0B00055308A /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDE7E3271CB0B00055308A /* PreviewCell.swift */; };
+		A3BDE7E6271CB3BD0055308A /* PreviewScreenshotsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDE7E5271CB3BD0055308A /* PreviewScreenshotsController.swift */; };
+		A3BDE7E8271CCBF70055308A /* ReviewRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDE7E7271CCBF70055308A /* ReviewRowCell.swift */; };
+		A3BDE7EA271CCF9E0055308A /* RewiewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDE7E9271CCF9E0055308A /* RewiewsController.swift */; };
+		A3BDE7EC271CD2A40055308A /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDE7EB271CD2A40055308A /* ReviewCell.swift */; };
+		A3BDE7EE271CFAF70055308A /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDE7ED271CFAF70055308A /* Reviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,12 @@
 		A399798F270EDB2C0054437B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A3AD6E2B2715F06C00D39750 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		A3AD6E2D27170CBA00D39750 /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
+		A3BDE7E3271CB0B00055308A /* PreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
+		A3BDE7E5271CB3BD0055308A /* PreviewScreenshotsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewScreenshotsController.swift; sourceTree = "<group>"; };
+		A3BDE7E7271CCBF70055308A /* ReviewRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRowCell.swift; sourceTree = "<group>"; };
+		A3BDE7E9271CCF9E0055308A /* RewiewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewiewsController.swift; sourceTree = "<group>"; };
+		A3BDE7EB271CD2A40055308A /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		A3BDE7ED271CFAF70055308A /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +166,11 @@
 			children = (
 				A3645291271A270A001968DE /* AppDetailController.swift */,
 				A3645293271A2E23001968DE /* AppDetailCell.swift */,
+				A3BDE7E3271CB0B00055308A /* PreviewCell.swift */,
+				A3BDE7E5271CB3BD0055308A /* PreviewScreenshotsController.swift */,
+				A3BDE7E7271CCBF70055308A /* ReviewRowCell.swift */,
+				A3BDE7E9271CCF9E0055308A /* RewiewsController.swift */,
+				A3BDE7EB271CD2A40055308A /* ReviewCell.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -194,6 +211,7 @@
 				A399798C270ED4800054437B /* SearchResult.swift */,
 				A3AD6E2B2715F06C00D39750 /* AppGroup.swift */,
 				A3AD6E2D27170CBA00D39750 /* SocialApp.swift */,
+				A3BDE7ED271CFAF70055308A /* Reviews.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,8 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BDE7EA271CCF9E0055308A /* RewiewsController.swift in Sources */,
 				A3417C5127104E100097989F /* Extension.swift in Sources */,
 				A364528F2719F480001968DE /* BetterSnappingLayout.swift in Sources */,
+				A3BDE7EC271CD2A40055308A /* ReviewCell.swift in Sources */,
 				A336DF97270D61CD008124F3 /* BaseTabBarController.swift in Sources */,
 				A3AD6E2E27170CBA00D39750 /* SocialApp.swift in Sources */,
 				A399798D270ED4800054437B /* SearchResult.swift in Sources */,
@@ -295,10 +315,14 @@
 				A3997982270D80F40054437B /* AppSearchControllerCollectionViewController.swift in Sources */,
 				A3645294271A2E24001968DE /* AppDetailCell.swift in Sources */,
 				A3417C482710232F0097989F /* BaseListController.swift in Sources */,
+				A3BDE7E8271CCBF70055308A /* ReviewRowCell.swift in Sources */,
+				A3BDE7E6271CB3BD0055308A /* PreviewScreenshotsController.swift in Sources */,
 				A3417C4F27104C6D0097989F /* AppRowCell.swift in Sources */,
 				A3417C57271065820097989F /* AppsHeaderCell.swift in Sources */,
 				A3997985270D90BE0054437B /* SearchResultCell.swift in Sources */,
 				A3417C5327105D180097989F /* AppsPageHeader.swift in Sources */,
+				A3BDE7E4271CB0B00055308A /* PreviewCell.swift in Sources */,
+				A3BDE7EE271CFAF70055308A /* Reviews.swift in Sources */,
 				A3417C4B271026D80097989F /* AppsGroupCell.swift in Sources */,
 				A399798A270E9D080054437B /* VerticalStackView.swift in Sources */,
 				A3997990270EDB2C0054437B /* Service.swift in Sources */,
@@ -453,6 +477,7 @@
 				INFOPLIST_FILE = AppStoreJSONApi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -483,6 +508,7 @@
 				INFOPLIST_FILE = AppStoreJSONApi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
