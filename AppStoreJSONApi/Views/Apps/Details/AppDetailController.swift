@@ -71,7 +71,7 @@ class AppDetailController: BaseListController, UICollectionViewDelegateFlowLayou
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reviewCellId, for: indexPath) as! ReviewRowCell
-            cell.rewiewsController.reviews = self.reviews
+            cell.reviewsController.reviews = self.reviews
             return cell
         }
     }

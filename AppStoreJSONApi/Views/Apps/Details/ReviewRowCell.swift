@@ -9,13 +9,13 @@ import UIKit
 
 class ReviewRowCell : UICollectionViewCell {
         
-    let rewiewsController = RewiewsController()
+    let reviewsController = ReviewsController()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .yellow
-        addSubview(rewiewsController.view)
-        rewiewsController.view.fillSuperview()
+        addSubview(reviewsController.view)
+        reviewsController.view.fillSuperview()
     }
     
     required init?(coder: NSCoder) {
